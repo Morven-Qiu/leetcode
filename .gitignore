@@ -1,0 +1,28 @@
+# Class Files #
+*.class
+
+# Log Files#
+*.log
+log/
+*.log.*
+
+# Target Files #
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA #
+.idea/*.xml
+*.iws
+*.iml
+*.ipr
+*.xml
+*.idea
+# Package Files #
+*.jar
+*.war
+*.ear
+*.tlog
+*.ckp
+*.xml
+# Elasitc Search #
+/data/
