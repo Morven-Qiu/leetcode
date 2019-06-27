@@ -1,5 +1,7 @@
 package src.leetcode.no503;
 
+import java.util.Arrays;
+
 public class Solution1 {
 
     public int[] nextGreaterElements(int[] nums) {
@@ -32,8 +34,6 @@ public class Solution1 {
         Solution1 solution1 = new Solution1();
         int[] array = new int[]{2, 2, 3};
         int[] result = solution1.nextGreaterElements(array);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println("value = [" + result[i] + "]");
-        }
+        System.out.println("args = [" + Arrays.toString(result) + "]");
     }
 }
