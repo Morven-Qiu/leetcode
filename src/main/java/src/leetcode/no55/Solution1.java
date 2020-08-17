@@ -1,6 +1,5 @@
 package src.leetcode.no55;
 
-import sun.jvm.hotspot.utilities.Assert;
 
 /**
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -26,15 +25,15 @@ public class Solution1 {
     public static void main(String[] args) {
         Solution1 solution1 = new Solution1();
         int[] a = {2, 3, 1, 1, 4};
-        Assert.that(solution1.canJump(a), "a failed");
+       // Assert.that(solution1.canJump(a), "a failed");
         int[] b = {3, 2, 1, 0, 4};
-        Assert.that(solution1.canJump(b) == false, "b failed");
+       // Assert.that(solution1.canJump(b) == false, "b failed");
         int[] c = {1};
-        Assert.that(solution1.canJump(c) == true, "c failed");
+       // Assert.that(solution1.canJump(c) == true, "c failed");
         int[] d = {1, 2};
-        Assert.that(solution1.canJump(d) == true, "d failed");
+        //Assert.that(solution1.canJump(d) == true, "d failed");
         int[] e = {2, 5, 0, 0};
-        Assert.that(solution1.canJump(e) == true, "e failed");
+       // Assert.that(solution1.canJump(e) == true, "e failed");
     }
 
     public boolean canJump(int[] nums) {

@@ -1,6 +1,5 @@
 package src.leetcode.no45;
 
-import sun.jvm.hotspot.utilities.Assert;
 
 /**
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -23,7 +22,7 @@ public class Solution1 {
 
     public static void main(String[] args) {
         Solution1 solution1 = new Solution1();
-        Assert.that(solution1.jump(new int[]{2, 3, 1, 1, 4}) == 2, "failed");
+        //Assert.that(solution1.jump(new int[]{2, 3, 1, 1, 4}) == 2, "failed");
     }
 
     public int jump(int[] nums) {

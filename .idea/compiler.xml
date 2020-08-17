@@ -9,8 +9,8 @@
         <module name="leecode" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="leecode" target="1.8" />
+    <bytecodeTargetLevel target="8">
+      <module name="leecode" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
