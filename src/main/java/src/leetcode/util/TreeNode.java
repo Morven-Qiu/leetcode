@@ -17,7 +17,7 @@ public class TreeNode {
         val = x;
     }
 
-    private static int depth(TreeNode treeNode) {
+    public static int depth(TreeNode treeNode) {
         if (treeNode == null) {
             return 0;
         }
