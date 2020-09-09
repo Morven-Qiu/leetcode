@@ -1,5 +1,7 @@
 package src.leetcode.no2;
 
+import src.leetcode.util.ListNode;
+
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  * <p>
@@ -25,29 +27,29 @@ public class Solution1 {
             int temp1 = 0;
             int temp2 = 0;
             if (next1 != null) {
-                temp1 = next1.val;
-                next1 = next1.next;
+                temp1 = next1.getVal();
+                next1 = next1.getNext();
             }
             if (next2 != null) {
-                temp2 = next2.val;
-                next2 = next2.next;
+                temp2 = next2.getVal();
+                next2 = next2.getNext();
             }
             int sum = temp1 + temp2 + left;
             left = sum / 10;
             ListNode node = new ListNode(sum % 10);
-            last.next = node;
+            last.setNext(node);
             last = node;
         }
         if (left > 0) {
-            last.next = new ListNode(1);
+            last.setNext(new ListNode(1));
         }
-        return result.next;
+        return result.getNext();
     }
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(5);
         ListNode l2 = new ListNode(9);
-        l1.next = l2;
+        l1.setNext(l2);
 
 
         ListNode l4 = new ListNode(5);
